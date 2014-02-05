@@ -5,6 +5,10 @@
  *
  * @author James Irick
  */
+ 
+ Database Connection Class uses the singleton design pattern. 
+ We only need 1 connection object to exist when our application is running. 
+ The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
 
 class Database
 {
@@ -23,6 +27,7 @@ class Database
         }
         catch (PDOException $e)
         {
+        	//TODO create logger and log this to file
             echo "Connection Error: " . $e->getMessage();
         }
     }
