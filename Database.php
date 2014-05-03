@@ -4,11 +4,13 @@
  * Description of Database
  *
  * @author James Irick
+ * 
+ *  Database Connection Class uses the singleton design pattern. 
+ *  We only need 1 connection object to exist when our application is running. 
+ *  The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
  */
  
- Database Connection Class uses the singleton design pattern. 
- We only need 1 connection object to exist when our application is running. 
- The singleton pattern is a design pattern that restricts the instantiation of a class to one object.
+
 
 class Database
 {
